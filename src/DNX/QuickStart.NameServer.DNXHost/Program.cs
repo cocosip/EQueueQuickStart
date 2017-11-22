@@ -1,6 +1,6 @@
 ﻿using Topshelf;
 
-namespace QuickStart.BrokerServer.NFXHost
+namespace QuickStart.NameServer.DNXHost
 {
     class Program
     {
@@ -10,9 +10,9 @@ namespace QuickStart.BrokerServer.NFXHost
             {
                 x.RunAsLocalService();
                 x.StartAutomatically();
-                x.SetDescription("EQueue Broker Service");
-                x.SetDisplayName("EQueueBrokerServer");
-                x.SetServiceName("EQueueBrokerServer");
+                x.SetDescription("EQueue NameServer Service");
+                x.SetDisplayName("EQueueNameServer");
+                x.SetServiceName("EQueueNameServer");
                 x.Service<Bootstrap>(s =>
                 {
                     s.ConstructUsing(b => new Bootstrap());

@@ -4,7 +4,7 @@ using EQueue.NameServer;
 using System.Configuration;
 using System.Net;
 using ECommonConfiguration = ECommon.Configurations.Configuration;
-namespace QuickStart.NameServer.NFXHost
+namespace QuickStart.NameServer.DNXHost
 {
     public class Bootstrap
     {

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Net;
 using ECommonConfiguration = ECommon.Configurations.Configuration;
-namespace QuickStart.BrokerServer.NFXHost
+namespace QuickStart.BrokerServer.DNXHost
 {
     public class Bootstrap
     {

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("QuickStart.BrokerServer.NFXHost")]
+[assembly: AssemblyTitle("QuickStart.BrokerServer.DNXHost")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("QuickStart.BrokerServer.NFXHost")]
+[assembly: AssemblyProduct("QuickStart.BrokerServer.DNXHost")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("3013c319-d731-4e8e-af5c-6d52562e42bd")]
+[assembly: Guid("8ce7b31c-a42f-4ee9-ab11-3d99f448ed8e")]
 
 // 程序集的版本信息由下列四个值组成: 
 //

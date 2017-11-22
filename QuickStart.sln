@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NFX", "NFX", "{58581FA1-B818-4D7F-A76E-DF7A0719DB6E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DNX", "DNX", "{5A3FA03D-A246-4CBC-B830-0D06C39A06B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickStart.NameServer.NFXHost", "src\NFX\QuickStart.NameServer.NFXHost\QuickStart.NameServer.NFXHost.csproj", "{B0234B7E-E597-4D4C-9F09-32BBA2A1D765}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickStart.NameServer.DNXHost", "src\DNX\QuickStart.NameServer.DNXHost\QuickStart.NameServer.DNXHost.csproj", "{304BA035-4AFB-498D-8850-B7702E88F231}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickStart.BrokerServer.NFXHost", "src\NFX\QuickStart.BrokerServer.NFXHost\QuickStart.BrokerServer.NFXHost.csproj", "{3013C319-D731-4E8E-AF5C-6D52562E42BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickStart.BrokerServer.DNXHost", "src\DNX\QuickStart.BrokerServer.DNXHost\QuickStart.BrokerServer.DNXHost.csproj", "{8CE7B31C-A42F-4EE9-AB11-3D99F448ED8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,21 +15,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B0234B7E-E597-4D4C-9F09-32BBA2A1D765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0234B7E-E597-4D4C-9F09-32BBA2A1D765}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B0234B7E-E597-4D4C-9F09-32BBA2A1D765}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B0234B7E-E597-4D4C-9F09-32BBA2A1D765}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3013C319-D731-4E8E-AF5C-6D52562E42BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3013C319-D731-4E8E-AF5C-6D52562E42BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3013C319-D731-4E8E-AF5C-6D52562E42BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3013C319-D731-4E8E-AF5C-6D52562E42BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{304BA035-4AFB-498D-8850-B7702E88F231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{304BA035-4AFB-498D-8850-B7702E88F231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{304BA035-4AFB-498D-8850-B7702E88F231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{304BA035-4AFB-498D-8850-B7702E88F231}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CE7B31C-A42F-4EE9-AB11-3D99F448ED8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CE7B31C-A42F-4EE9-AB11-3D99F448ED8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CE7B31C-A42F-4EE9-AB11-3D99F448ED8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CE7B31C-A42F-4EE9-AB11-3D99F448ED8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{B0234B7E-E597-4D4C-9F09-32BBA2A1D765} = {58581FA1-B818-4D7F-A76E-DF7A0719DB6E}
-		{3013C319-D731-4E8E-AF5C-6D52562E42BD} = {58581FA1-B818-4D7F-A76E-DF7A0719DB6E}
+		{304BA035-4AFB-498D-8850-B7702E88F231} = {5A3FA03D-A246-4CBC-B830-0D06C39A06B8}
+		{8CE7B31C-A42F-4EE9-AB11-3D99F448ED8E} = {5A3FA03D-A246-4CBC-B830-0D06C39A06B8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {91C49ACD-E36E-4771-96FF-AD61F59A4F05}
