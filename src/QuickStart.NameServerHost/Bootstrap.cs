@@ -1,10 +1,11 @@
 ﻿using ECommon.Configurations;
 using EQueue.Configurations;
 using EQueue.NameServer;
-using System.Configuration;
+using Microsoft.Extensions.Configuration;
+using System.IO;
 using System.Net;
-using ECommonConfiguration = ECommon.Configurations.Configuration;
-namespace QuickStart.NameServer.DNXHost
+
+namespace QuickStart.NameServerHost
 {
     public class Bootstrap
     {
@@ -12,11 +13,18 @@ namespace QuickStart.NameServer.DNXHost
 
         public void Initialize()
         {
+            var builder = new ConfigurationBuilder()
+             .SetBasePath(Directory.GetCurrentDirectory())
+             .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+             .AddEnvironmentVariables();
+            var configuration = builder.Build();
+
             InitializeEQueue();
-            var localAddress = IPAddress.Parse(ConfigurationManager.AppSettings["LocalAddress"]);
-            var localPort = int.Parse(ConfigurationManager.AppSettings["LocalPort"]);
-            var autoCreateTopic = bool.Parse(ConfigurationManager.AppSettings["autoCreateTopic"]);
-            var brokerInactiveMaxMilliseconds = int.Parse(ConfigurationManager.AppSettings["BrokerInactiveMaxMilliseconds"]);
+
+            var localAddress = IPAddress.Parse(configuration["EQueue:LocalAddress"]);
+            var localPort = int.Parse(configuration["EQueue:LocalPort"]);
+            var autoCreateTopic = bool.Parse(configuration["EQueue:AutoCreateTopic"]);
+            var brokerInactiveMaxMilliseconds = int.Parse(configuration["EQueue:BrokerInactiveMaxMilliseconds"]);
             var setting = new NameServerSetting()
             {
                 BindingAddress = new IPEndPoint(localAddress, localPort),
@@ -38,7 +46,7 @@ namespace QuickStart.NameServer.DNXHost
 
         void InitializeEQueue()
         {
-            var configuration = ECommonConfiguration
+            var configuration = ECommon.Configurations.Configuration
                 .Create()
                 .UseAutofac()
                 .RegisterCommonComponents()

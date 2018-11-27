@@ -1,6 +1,7 @@
-﻿using Topshelf;
+﻿using System;
+using Topshelf;
 
-namespace QuickStart.NameServer.DNXHost
+namespace QuickStart.NameServerHost
 {
     class Program
     {

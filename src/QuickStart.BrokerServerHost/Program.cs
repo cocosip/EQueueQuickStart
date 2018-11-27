@@ -1,6 +1,7 @@
-﻿using Topshelf;
+﻿using System;
+using Topshelf;
 
-namespace QuickStart.BrokerServer.DNXHost
+namespace QuickStart.BrokerServerHost
 {
     class Program
     {
