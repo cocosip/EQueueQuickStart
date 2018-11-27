@@ -1,10 +1,10 @@
 ﻿using ECommon.Configurations;
 using ECommon.Extensions;
 using EQueue.Broker;
+using EQueue.Clients.Producers;
 using EQueue.Configurations;
 using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
-using System.Configuration;
 using System.IO;
 using System.Net;
 
@@ -92,6 +92,7 @@ namespace QuickStart.BrokerServerHost
                 .UseJsonNet()
                 .RegisterUnhandledExceptionHandler()
                 .RegisterEQueueComponents()
+                .SetDefault<IQueueSelector, QueueAverageSelector>()
                 .UseDeleteMessageByCountStrategy(5)
                 .BuildContainer();
         }
